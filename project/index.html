@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Test Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options">
+                <button id="optionA" onclick="selectOption('A')">A</button>
+                <button id="optionB" onclick="selectOption('B')">B</button>
+                <button id="optionC" onclick="selectOption('C')">C</button>
+                <button id="optionD" onclick="selectOption('D')">D</button>
+            </div>
+            <div id="timer">Süre: 30</div>
+        </div>
+        <div class="summary" id="summary">
+            <h3>Sonuçlar</h3>
+            <table id="resultTable" border="1">
+                <tr>
+                    <th>Soru</th>
+                    <th>Yanıt</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
